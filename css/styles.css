@@ -5,6 +5,9 @@
 /* білий #ffffff */
 /* акцент #2196F3 */
 /* основний колір фону #F5F4FA */
+/* Основний колі рамки #EEEEEE */
+/* Ддатковий колір рамки #ECECEC */
+
 
 :root {
     --primary-text-color: #757575;
@@ -12,12 +15,19 @@
     --accent-color: #2196F3;
     --additional-color: rgba(255, 255, 255, 0.6);
     --additional-bg-color: #F5F4FA;
+    --primary-border-color: #EEEEEE;
+    --secondary-border-color: #ECECEC;
 }
 
 .list {
     list-style: none;
     padding-left: 0;
     margin: 0;
+}
+
+
+.no-title {
+    display: none;
 }
 
 h1,
@@ -40,6 +50,10 @@ body {
 
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
+}
+
+.header {
+    border-bottom: 1px solid var(--secondary-border-color);
 }
 
 .container {
@@ -134,6 +148,7 @@ body {
     padding-top: 0;
 }
 
+
 .features .title {
     margin-bottom: 10px;
 
@@ -201,15 +216,32 @@ body {
 }
 
 /* Портфоліо */
+
+.portfolio.buttons {
+    margin-bottom: 50px;
+}
+
+.portfolio .item {
+    border: 1px solid var(--primary-border-color);
+}
+
 .portfolio a {
     color: inherit;
 }
 
 .portfolio .title {
+    margin-bottom: 4px;
+
     color: var(--title-text-color);
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
+
+
+}
+
+.portfolio .image {
+    margin-bottom: 20px;
 }
 
 .portfolio .text {
@@ -236,7 +268,10 @@ body {
 }
 
 .button {  
+    min-width: 73px;
     border: 0;
+    border-radius: 4px;
+    padding: 6px 22px;
 
     background-color: var(--additional-bg-color);
     cursor: pointer;
