@@ -104,6 +104,10 @@ body {
     color: var(--accent-color);
 }
 
+.site-nav .link.active {
+    color: var(--accent-color);
+}
+
 .site-nav, .contacts-nav {
     letter-spacing: 0.02em;
     font-weight: 500;
@@ -239,7 +243,6 @@ body {
 }
 
 .team .item {
-    padding-bottom: 30px;
     background-color: #ffffff;
     border-radius: 0 0 4px 4px;
 
@@ -250,8 +253,9 @@ body {
     margin-right: 30px;
 }
 
-.team .image {
-    margin-bottom: 30px;
+.team .content {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team .text {
